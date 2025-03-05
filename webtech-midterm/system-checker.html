@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom Checker</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Styling for Symptom Checker */
+    .symptom-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f9f9f9;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .result-box {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="text-center mt-4">AI-Powered Symptom Checker</h2>
+    <div class="symptom-container">
+      <p>Select your symptoms:</p>
+      <select id="symptom-select" class="form-select">
+        <option value="">-- Select a Symptom --</option>
+        <option value="fever">Fever</option>
+        <option value="cough">Cough</option>
+        <option value="fatigue">Fatigue</option>
+        <option value="headache">Headache</option>
+        <option value="stomach pain">Stomach Pain</option>
+      </select>
+      <button type="button" class="btn btn-primary mt-3" onclick="checkSymptoms()">Check Symptoms</button>
+      <div id="result" class="result-box"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/symptom-checker.js"></script>
+
+</body>
+</html>
